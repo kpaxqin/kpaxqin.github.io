@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "setTimeout/setInterval在Chrome/FF非激活标签页下节流的问题"
-date:   2014-09-18 14:12:12
+title:  "javascript中的AOP"
+date:   2014-12-15 14:12:12
 categories: bugs&issues
 ---
 
