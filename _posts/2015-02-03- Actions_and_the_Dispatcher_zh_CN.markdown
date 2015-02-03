@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "翻译 Flux: Actions and the Dispatcher"
+date:   2015-02-03 17:41:00
+categories: javascript flux
+---
+
 ## Flux: Actions and the Dispatcher
 
 
