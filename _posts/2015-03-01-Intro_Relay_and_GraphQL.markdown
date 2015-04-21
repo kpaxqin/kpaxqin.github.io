@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "翻译：Introducing Relay and GraphQL"
+description: "翻译：Introducing Relay and GraphQL. 探讨如何组织React应用的数据层结构"
 date:   2015-03-01 00:57:00
 categories: javascript flux react relay
 ---
