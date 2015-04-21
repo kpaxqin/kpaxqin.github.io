@@ -4,6 +4,7 @@ email: kpaxqin@foxmail.com
 description: > # this means to ignore newlines until "baseurl:"
   this is kpaxqin's blog.
 permalink: /blog/:year/:month/:day/:title
+keep_files: ['README.md', about.md]
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://kpaxqin.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
