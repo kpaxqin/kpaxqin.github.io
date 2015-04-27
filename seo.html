@@ -7,11 +7,20 @@
     <meta name="description" content="test page for SEO issues" />
     <meta name="keywords" content="seo,kpaxqin"/>
 
+    <script src="http://fb.me/react-0.13.2.js"></script>
+
 </head>
 <body>
-    <h1>
+    <h1 id="h1">
         <strong>kpaxqin is testing SEO</strong>
     </h1>
     <a href="/">back to home</a>
+
+    <script>
+        React.render(
+            React.createElement("em", null,  "thoughtworks"),
+            document.getElementById("h1")
+        );
+    </script>
 </body>
 </html>
