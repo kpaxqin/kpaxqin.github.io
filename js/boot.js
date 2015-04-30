@@ -3,7 +3,7 @@
  */
 (function(){
     React.render(
-        React.createElement("em", null,  "thoughtworks"),
+        React.createElement("em", null,  "boot"),
         document.getElementById("h1")
     );
 })();
