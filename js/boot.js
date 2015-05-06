@@ -3,7 +3,7 @@
  */
 $(function(){
     React.render(
-        React.createElement("em", null,  "spike"),
+        React.createElement("em", null,  "basketball"),
         document.getElementById("h1")
     );
 });
