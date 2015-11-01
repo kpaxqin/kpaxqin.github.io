@@ -71,7 +71,7 @@ class Form extends React.Component {
 	}
 }
 ```
-[完整代码 step_1](https://github.com/kpaxqin/fp-note/tree/6816bfd024f4389de89f7924870a6ef1633536e8)
+[完整代码 step_1](https://github.com/kpaxqin/fp-note/blob/6816bfd024f4389de89f7924870a6ef1633536e8/src/index.jsx)
 
 借助高阶函数式的function return function，对不同的key我们能够复用响应事件并setState的逻辑，上例可以认为就是脱掉了马甲的`部分应用`。
 
@@ -103,7 +103,7 @@ class Form extends React.Component{
 	}
 }
 ```
-[完整代码 step_2](https://github.com/kpaxqin/fp-note/tree/6816bfd024f4389de89f7924870a6ef1633536e8)
+[完整代码 step_2](https://github.com/kpaxqin/fp-note/blob/353c0f39554dded4c72bbc9a9d5d51ed38aa36f1/src/index.jsx)
 
 部分应用的特性使得我们可以把关注点分散到每一个参数，在render函数中
 >const setField = setFieldOnContext(this);
@@ -233,7 +233,7 @@ class Form extends React.Component{
 }
 ```
 
-`setFieldOnContext`函数已经能帮我们节省一些重复代码，就像它的前辈`setField`一样，然而它的职责还分离得不够干净：对`e.target.value`的依赖使得它只能处理原生事件对象。假设我们有一些第三方组件（比如接下来会遇到的X组件），它们的`onChange`抛出了并不标准的事件对象，甚至可能直接把value扔了出来，`setFieldOnContext`看起来有些力不从心了，我们只能回到`复制--粘贴--修改`的怀抱了吗？是时候借用组合的力量了：
+`setFieldOnContext`函数已经能帮我们节省一些重复代码，就像它的前辈`setField`一样，然而它的职责还分离得不够干净：对`e.target.value`的依赖使得它只能处理原生事件对象。假设我们有一些第三方组件（比如接下来会遇到的X组件），它们的`onChange`抛出了并不标准的事件对象，甚至可能直接把value扔了出来。看起来`setFieldOnContext`有些不从心，难道我们只能回到`复制--粘贴--修改`的怀抱吗？是时候借用组合的力量了：
 
 ```js
 import _ from 'ramda'
@@ -355,7 +355,7 @@ React.createClass({
 })
 
 ```
-[完整代码 step_4](https://github.com/kpaxqin/fp-note/tree/b4bfa8f83ae714ca225751f0ae08e0b11386096a)
+[完整代码 step_4](https://github.com/kpaxqin/fp-note/blob/b4bfa8f83ae714ca225751f0ae08e0b11386096a/src/index.jsx)
 
 数一数，我们一下子有了六个函数！或许你会为此感到不安：是不是弄错了什么？
 
