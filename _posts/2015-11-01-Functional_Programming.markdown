@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "函数式编程入门笔记与实践应用（一）"
+description: "函数式编程入门笔记；Curry与Compose；使用函数式编程处理react组件事件"
+date:   2015-03-01 00:57:00
+categories: FP functional-programming curry compose react
+---
+
 ##前言
 最近在看近来很火的函数式编程教程[《Mostly Adequate Guide》](book) （中文版：[《JS函数式编程指南》](book_cn)），收获很大。对于函数式编程的初学者，这本书不仅深入浅出，更让人感受到函数式编程的优势和美感，强烈推荐给想要学习函数式编程的朋友。
 
