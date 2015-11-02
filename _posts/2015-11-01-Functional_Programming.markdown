@@ -367,6 +367,8 @@ React.createClass({
 
 当然这一版本的实现仍不完美：`setFieldOnContext`把值直接设到了state的属性上，有时候这并不是我们想要的结果。在此我先不给出实现，留给看官思考和动手。
 
+>补充：我的实现见 [代码step_5](https://github.com/kpaxqin/fp-note/blob/28caec834cbb772bfe77d56dbfdfa8a5be6fc40a/src/index.jsx) , 感谢[Young](https://github.com/littlehaker)的建议与启发
+
 下一篇，我会借助Promise这个老面孔来介绍Functor和Monad——这两个你甚至没有见过，却无处不在的概念。
 
 
