@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "函数式编程入门笔记与实践应用（一）"
+title:  "函数式编程——入门笔记与React实践"
 description: "函数式编程入门笔记；Curry与Compose；使用函数式编程处理react组件事件"
 date:   2015-11-01 19:30:00
 categories: FP functional-programming curry compose react
