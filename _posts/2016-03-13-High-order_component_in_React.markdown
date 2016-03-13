@@ -10,7 +10,7 @@ categories: react high-order component HOC compose
 
 >Higher-Order Components (HOCs) are JavaScript functions which add functionality to existing component classes. 
 
-通过函数向现有组件类添加功能，就是高阶组件。
+通过函数向现有组件类添加逻辑，就是高阶组件。
 
 让我们先来看一个可能是史上最无聊的高阶组件：
 
@@ -116,7 +116,7 @@ class UserList extends Component {
 如果再来一个书单列表呢？再写一个BookList然后把loadUsers改成loadBooks ？
 不仅代码重复，大量有状态和副作用的组件，也使得应用更加难以测试。
 
-也许你会说可以考虑使用Flux。它确实可以让你的代码更清晰，但是在有些场景下使用Flux就像大炮打蚊子。比如一个异步的下拉列表，如果要考虑复用的话，传统的Flux/Reflux几乎无法优雅的处理，Redux稍好一些，但仍然很难做优雅。关于flux/redux的缺点不深入，有兴趣的可以参考[Cycle.js作者的文章](http://staltz.com/why-react-redux-is-an-inferior-paradigm.html?utm_source=javascriptweekly&utm_medium=email)
+也许你会考虑使用Flux。它确实能让你的代码更清晰，但是在有些场景下使用Flux就像大炮打蚊子。比如一个异步的下拉选择框，如果要考虑复用的话，传统的Flux/Reflux几乎无法优雅的处理，Redux稍好一些，但仍然很难做优雅。关于flux/redux的缺点不深入，有兴趣的可以参考[Cycle.js作者的文章](http://staltz.com/why-react-redux-is-an-inferior-paradigm.html?utm_source=javascriptweekly&utm_medium=email)
 
 回到问题的本源：其实我们只想要一个能复用的异步下拉列表而已啊！
 
@@ -158,7 +158,7 @@ const BookList = connectPromise({
 
 ```
 
-不仅大大减少了重复代码，还把散落各处的异步逻辑装进了可以单独管理和测试的笼子，而在业务场景中，只需要`纯组件 + 配置` 就能实现相同的功能——而无论是`纯组件`还是`配置`，都是对单元测试友好的，至少比异步组件友好多了。
+不仅大大减少了重复代码，还把散落各处的异步逻辑装进了可以单独管理和测试的笼子，在业务场景中，只需要`纯组件 + 配置` 就能实现相同的功能——而无论是`纯组件`还是`配置`，都是对单元测试友好的，至少比异步组件友好多了。
 
 ## 使用curry & compose
 
@@ -193,7 +193,7 @@ UserList = compose(
 ## 总结
 在团队内部分享里，我的总结是三个词 Easy, Light-weight & Composable. 
 
-其实高阶组件并不是什么新东西，本质上就是`Decorator`模式在React的一种实现，但在相当一段时间内，这个优秀的模式都被人忽略。在我看来，大部分使用`mixin`和`class extends`的地方，使用高阶组件都是更好的方案——毕竟组合优于继承，而mixin——个人觉得没资格参与讨论。
+其实高阶组件并不是什么新东西，本质上就是`Decorator`模式在React的一种实现，但在相当一段时间内，这个优秀的模式都被人忽略。在我看来，大部分使用`mixin`和`class extends`的地方，高阶组件都是更好的方案——毕竟组合优于继承，而mixin——个人觉得没资格参与讨论。
 
 使用高阶组件还有两个好处：
 
