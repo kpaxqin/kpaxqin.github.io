@@ -2,7 +2,7 @@
 layout: post
 title:  "Elm入门实践——基础篇"
 description: "Learn you a elm for great good."
-date:   2016-06-11 14:50:00T08
+date:   2016-06-11 14:50:00 -0800
 categories: elm functional-programming front-end
 ---
 
