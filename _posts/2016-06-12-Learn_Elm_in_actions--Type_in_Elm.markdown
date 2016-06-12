@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Elm入门实践——基础篇"
-description: "Learn you a elm for great good."
+title:  "Elm入门实践——类型篇"
+description: "Understanding type in Elm."
 date:   2016-06-12 23:00:00 +0800
 categories: elm functional-programming front-end
 ---
