@@ -6,8 +6,6 @@ date:   2016-06-11 14:50:00 -0800
 categories: elm functional-programming front-end
 ---
 
-# Elm入门实践——基础篇
-
 ## 简介
 [Elm](http://elm-lang.org/) 是一门专注于Web前端的纯函数式语言。你可能没听说过它，但一定听说过Redux，而Redux的核心reducer就是受到了Elm的启发。
 
